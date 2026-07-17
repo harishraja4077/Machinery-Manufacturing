@@ -155,9 +155,27 @@ body.menu-open {
 .navbar.scrolled {
   background: rgba(11, 12, 16, 0.95);
   backdrop-filter: blur(20px);
-  padding: 12px 0;
+  padding: 5px 0;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
   border-bottom: 1px solid rgba(230, 57, 70, 0.1);
+}
+
+.navbar.scrolled .logo-img {
+  height: 75px;
+}
+
+.navbar.scrolled .nav-links a {
+  padding: 6px 14px;
+}
+
+.navbar.scrolled .nav-cta {
+  padding: 6px 16px !important;
+}
+
+.navbar.scrolled .hamburger {
+  width: 36px;
+  height: 36px;
+  padding: 7px;
 }
 
 .nav-container {
@@ -195,10 +213,10 @@ body.menu-open {
 }
 
 .logo-img {
-  height: 92px;
+  height: 110px;
   width: auto;
   object-fit: contain;
-  transition: var(--transition);
+  transition: height 0.3s ease, transform 0.3s ease;
 }
 
 .logo:hover .logo-img {
@@ -561,6 +579,11 @@ body.menu-open {
   font-size: 18px;
 }
 
+.hero-float-card .icon-circle svg {
+  width: 20px;
+  height: 20px;
+}
+
 .hero-float-card .card-info h4 {
   font-size: 14px;
   color: #fff;
@@ -867,14 +890,29 @@ body.menu-open {
   align-items: center;
   justify-content: center;
   color: var(--primary);
-  font-size: 14px;
   flex-shrink: 0;
+}
+
+.about-feature .check svg {
+  width: 14px;
+  height: 14px;
 }
 
 .about-feature span {
   font-size: 14px;
   font-weight: 500;
   color: var(--text);
+}
+
+.service-icon svg,
+.feature-icon svg,
+.stat-icon svg,
+.dash-stat-icon svg,
+.action-icon svg,
+.card-icon svg,
+.process-number svg {
+  width: 28px;
+  height: 28px;
 }
 
 /* ============================================
@@ -928,7 +966,11 @@ body.menu-open {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 28px;
+  color: var(--primary);
+  font-size: 13px;
+  font-weight: 700;
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 0.5px;
   margin-bottom: 24px;
   transition: var(--transition);
 }
@@ -1072,7 +1114,9 @@ body.menu-open {
 
 .product-spec .spec-icon {
   color: var(--accent);
-  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
 }
 
 /* ============================================
@@ -1125,7 +1169,7 @@ body.menu-open {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 24px;
+  color: var(--primary);
   margin: 0 auto 16px;
 }
 
@@ -1269,7 +1313,8 @@ body.menu-open {
 
 .testimonial-stars span {
   color: var(--accent);
-  font-size: 18px;
+  display: inline-flex;
+  align-items: center;
 }
 
 .testimonial-text {
@@ -1348,10 +1393,14 @@ body.menu-open {
   align-items: center;
   justify-content: center;
   color: #fff;
-  font-size: 18px;
   cursor: pointer;
   transition: var(--transition);
   z-index: 5;
+}
+
+.testimonial-arrow svg {
+  width: 20px;
+  height: 20px;
 }
 
 .testimonial-arrow:hover {
@@ -1681,6 +1730,8 @@ body.menu-open {
   position: relative;
   background: var(--gradient-3);
   overflow: hidden;
+  padding-top: 150px;
+  padding-bottom: 60px;
 }
 
 .page-hero::before {
@@ -1787,7 +1838,7 @@ body.menu-open {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 26px;
+  color: var(--primary);
   margin-bottom: 22px;
   transition: var(--transition);
 }
@@ -1892,7 +1943,7 @@ body.menu-open {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 22px;
+  color: var(--primary);
   flex-shrink: 0;
 }
 
@@ -2044,7 +2095,14 @@ body.menu-open {
 
 .gallery-overlay span {
   color: #fff;
-  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-overlay span svg {
+  width: 28px;
+  height: 28px;
 }
 
 /* ============================================
@@ -2303,6 +2361,11 @@ body.menu-open {
   box-shadow: 0 4px 20px rgba(230,57,70,0.4);
 }
 
+.back-to-top svg {
+  width: 20px;
+  height: 20px;
+}
+
 .back-to-top.visible {
   opacity: 1;
   visibility: visible;
@@ -2441,6 +2504,7 @@ body.menu-open {
   }
   .nav-cta::before { display: none !important; }
   .logo-img { height: 60px; }
+  .navbar.scrolled .logo-img { height: 50px; }
   .nav-container { padding: 0 16px; }
 
   /* Hero */
@@ -2484,10 +2548,10 @@ body.menu-open {
 
   /* Cards */
   .service-card { padding: 28px 24px; }
-  .service-icon { width: 52px; height: 52px; font-size: 24px; margin-bottom: 16px; }
+  .service-icon { width: 52px; height: 52px; font-size: 11px; margin-bottom: 16px; }
   .stat-card { padding: 28px 16px; }
   .stat-number { font-size: 32px; }
-  .stat-icon { width: 48px; height: 48px; font-size: 20px; }
+  .stat-icon { width: 48px; height: 48px; }
 
   /* Testimonials */
   .testimonial-card { padding: 28px 20px; }
@@ -2505,7 +2569,11 @@ body.menu-open {
   .cta-buttons .btn { width: 100%; max-width: 300px; justify-content: center; }
 
   /* Page Hero */
-  .page-hero { min-height: 35vh; }
+  .page-hero {
+    min-height: auto;
+    padding-top: 120px;
+    padding-bottom: 50px;
+  }
   .page-hero h1 { font-size: clamp(24px, 6vw, 36px); }
 
   /* Buttons */
@@ -2770,7 +2838,7 @@ body.menu-open {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 18px;
+  color: var(--text-dim);
   border-radius: 8px;
   background: rgba(255,255,255,0.04);
   flex-shrink: 0;
@@ -2965,7 +3033,7 @@ body.menu-open {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 24px;
+  color: var(--primary);
   flex-shrink: 0;
 }
 
@@ -3032,6 +3100,11 @@ body.menu-open {
   border-collapse: collapse;
 }
 
+.dash-table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
 .dash-table thead th {
   font-family: 'Space Grotesk', sans-serif;
   font-size: 12px;
@@ -3083,6 +3156,44 @@ body.menu-open {
   height: 6px;
   border-radius: 50%;
   background: currentColor;
+}
+
+/* Mobile sidebar backdrop */
+.dash-sidebar-backdrop {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  z-index: 99;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.dash-sidebar-backdrop.visible { opacity: 1; pointer-events: auto; }
+body.sidebar-open { overflow: hidden; position: fixed; width: 100%; }
+
+/* Sidebar close button */
+.dash-sidebar-close {
+  display: none;
+  background: none;
+  border: 1px solid rgba(255,255,255,0.1);
+  color: #fff;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  transition: var(--transition);
+}
+.dash-sidebar-close:hover {
+  background: rgba(230,57,70,0.15);
+  border-color: var(--primary);
 }
 
 /* Mobile sidebar toggle */
@@ -3172,7 +3283,7 @@ body.menu-open {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 22px;
+  color: var(--primary);
   transition: var(--transition);
 }
 
@@ -3254,6 +3365,8 @@ body.menu-open {
     transform: translateX(0);
     box-shadow: 10px 0 40px rgba(0,0,0,0.5);
   }
+  .dash-sidebar-backdrop { display: block; }
+  .dash-sidebar-close { display: flex; }
   .dash-main { margin-left: 0; }
   .dash-menu-toggle { display: flex; }
   .dash-stats-row { grid-template-columns: 1fr; }
@@ -3265,11 +3378,39 @@ body.menu-open {
   .dash-card { padding: 20px; border-radius: 12px; }
   .dash-card-header { flex-direction: column; align-items: flex-start; gap: 12px; }
   .dash-stat-card { padding: 16px; gap: 12px; }
-  .dash-stat-icon { width: 44px; height: 44px; font-size: 20px; }
+  .dash-stat-icon { width: 44px; height: 44px; }
   .dash-stat-info h3 { font-size: 18px; }
-  .dash-table { font-size: 13px; }
-  .dash-table thead th { padding: 10px 12px; font-size: 11px; }
-  .dash-table tbody td { padding: 12px; }
+  .dash-table { font-size: 13px; display: block; }
+  .dash-table thead { display: none; }
+  .dash-table tbody { display: block; width: 100%; }
+  .dash-table tbody tr {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 12px;
+    padding: 14px 16px;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    background: rgba(255,255,255,0.02);
+    border-radius: 10px;
+    margin-bottom: 8px;
+  }
+  .dash-table tbody td {
+    padding: 0;
+    border-bottom: none;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .dash-table tbody td::before {
+    content: attr(data-label);
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    min-width: 70px;
+    white-space: nowrap;
+  }
   .dash-actions-grid .dash-action-card { padding: 18px; }
   .dash-action-card .action-icon { width: 40px; height: 40px; font-size: 18px; }
   .dash-action-card h4 { font-size: 13px; }

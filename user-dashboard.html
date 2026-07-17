@@ -16,6 +16,7 @@
       <div class="dash-sidebar-header">
         <a href="index.html"><img src="images/logo.webp" alt="Stackly"></a>
         <span class="sidebar-badge badge-user">User</span>
+        <button class="dash-sidebar-close" id="sidebarClose">&times;</button>
       </div>
 
       <div class="dash-user-info">
@@ -29,31 +30,31 @@
       <nav class="dash-nav">
         <span class="dash-nav-label">Main</span>
         <a class="dash-nav-item active" data-panel="overview">
-          <span class="nav-icon">&#127968;</span> Dashboard Overview
+          <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span> Dashboard Overview
         </a>
         <a class="dash-nav-item" data-panel="orders">
-          <span class="nav-icon">&#128230;</span> My Orders
+          <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg></span> My Orders
           <span class="nav-badge">3</span>
         </a>
         <a class="dash-nav-item" data-panel="quotes">
-          <span class="nav-icon">&#128196;</span> Quote Requests
+          <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></span> Quote Requests
           <span class="nav-badge">1</span>
         </a>
         <a class="dash-nav-item" data-panel="messages">
-          <span class="nav-icon">&#128172;</span> Messages
+          <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span> Messages
           <span class="nav-badge">2</span>
         </a>
         <a class="dash-nav-item" data-panel="profile">
-          <span class="nav-icon">&#128100;</span> My Profile
+          <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span> My Profile
         </a>
       </nav>
 
       <div class="dash-sidebar-footer">
         <a class="dash-nav-item" href="index.html">
-          <span class="nav-icon">&#127968;</span> Back to Home
+          <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span> Back to Home
         </a>
         <a class="dash-nav-item" href="signin.html" id="logoutBtn">
-          <span class="nav-icon">&#128682;</span> Sign Out
+          <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg></span> Sign Out
         </a>
       </div>
     </aside>
@@ -91,19 +92,19 @@
         <div class="dash-panel active" id="panel-overview">
           <div class="dash-stats-row">
             <div class="dash-stat-card">
-              <div class="dash-stat-icon red">&#128230;</div>
+              <div class="dash-stat-icon red"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg></div>
               <div class="dash-stat-info"><h3>3</h3><p>Active Orders</p></div>
             </div>
             <div class="dash-stat-card">
-              <div class="dash-stat-icon blue">&#128196;</div>
+              <div class="dash-stat-icon blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
               <div class="dash-stat-info"><h3>1</h3><p>Pending Quotes</p></div>
             </div>
             <div class="dash-stat-card">
-              <div class="dash-stat-icon green">&#10003;</div>
+              <div class="dash-stat-icon green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
               <div class="dash-stat-info"><h3>12</h3><p>Completed Orders</p></div>
             </div>
             <div class="dash-stat-card">
-              <div class="dash-stat-icon orange">&#128172;</div>
+              <div class="dash-stat-icon orange"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
               <div class="dash-stat-info"><h3>2</h3><p>Unread Messages</p></div>
             </div>
           </div>
@@ -114,17 +115,17 @@
             </div>
             <div class="dash-actions-grid">
               <a class="dash-action-card" data-panel="orders">
-                <div class="action-icon">&#128230;</div>
+                <div class="action-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg></div>
                 <h4>View Orders</h4>
                 <p>Track all your orders</p>
               </a>
               <a class="dash-action-card" data-panel="quotes">
-                <div class="action-icon">&#128196;</div>
+                <div class="action-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
                 <h4>Request Quote</h4>
                 <p>Get pricing for projects</p>
               </a>
               <a class="dash-action-card" href="contact.html">
-                <div class="action-icon">&#128222;</div>
+                <div class="action-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
                 <h4>Contact Support</h4>
                 <p>Get help from our team</p>
               </a>
@@ -178,32 +179,32 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>#STK-2851</td>
-                  <td>MF-500 CNC Lathe</td>
-                  <td>Jul 14, 2026</td>
-                  <td>$48,500</td>
-                  <td><span class="status-badge processing">Processing</span></td>
+                  <td data-label="Order ID">#STK-2851</td>
+                  <td data-label="Product">MF-500 CNC Lathe</td>
+                  <td data-label="Date">Jul 14, 2026</td>
+                  <td data-label="Amount">$48,500</td>
+                  <td data-label="Status"><span class="status-badge processing">Processing</span></td>
                 </tr>
                 <tr>
-                  <td>#STK-2847</td>
-                  <td>CNC Tool Holders (Set)</td>
-                  <td>Jul 10, 2026</td>
-                  <td>$2,340</td>
-                  <td><span class="status-badge completed">Shipped</span></td>
+                  <td data-label="Order ID">#STK-2847</td>
+                  <td data-label="Product">CNC Tool Holders (Set)</td>
+                  <td data-label="Date">Jul 10, 2026</td>
+                  <td data-label="Amount">$2,340</td>
+                  <td data-label="Status"><span class="status-badge completed">Shipped</span></td>
                 </tr>
                 <tr>
-                  <td>#STK-2830</td>
-                  <td>MF-PC3000 Plasma Cutter</td>
-                  <td>Jun 28, 2026</td>
-                  <td>$35,200</td>
-                  <td><span class="status-badge completed">Delivered</span></td>
+                  <td data-label="Order ID">#STK-2830</td>
+                  <td data-label="Product">MF-PC3000 Plasma Cutter</td>
+                  <td data-label="Date">Jun 28, 2026</td>
+                  <td data-label="Amount">$35,200</td>
+                  <td data-label="Status"><span class="status-badge completed">Delivered</span></td>
                 </tr>
                 <tr>
-                  <td>#STK-2815</td>
-                  <td>Hydraulic Cylinder Kit</td>
-                  <td>Jun 15, 2026</td>
-                  <td>$4,780</td>
-                  <td><span class="status-badge completed">Delivered</span></td>
+                  <td data-label="Order ID">#STK-2815</td>
+                  <td data-label="Product">Hydraulic Cylinder Kit</td>
+                  <td data-label="Date">Jun 15, 2026</td>
+                  <td data-label="Amount">$4,780</td>
+                  <td data-label="Status"><span class="status-badge completed">Delivered</span></td>
                 </tr>
               </tbody>
             </table>
@@ -228,22 +229,22 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>#QT-1092</td>
-                  <td>Custom 5-axis CNC Machining (50 units)</td>
-                  <td>Jul 13, 2026</td>
-                  <td><span class="status-badge pending">Under Review</span></td>
+                  <td data-label="Quote ID">#QT-1092</td>
+                  <td data-label="Requirement">Custom 5-axis CNC Machining (50 units)</td>
+                  <td data-label="Date">Jul 13, 2026</td>
+                  <td data-label="Status"><span class="status-badge pending">Under Review</span></td>
                 </tr>
                 <tr>
-                  <td>#QT-1085</td>
-                  <td>MF-H2000 Press + Installation</td>
-                  <td>Jul 01, 2026</td>
-                  <td><span class="status-badge completed">Approved</span></td>
+                  <td data-label="Quote ID">#QT-1085</td>
+                  <td data-label="Requirement">MF-H2000 Press + Installation</td>
+                  <td data-label="Date">Jul 01, 2026</td>
+                  <td data-label="Status"><span class="status-badge completed">Approved</span></td>
                 </tr>
                 <tr>
-                  <td>#QT-1070</td>
-                  <td>Prototype Batch — Aerospace Brackets</td>
-                  <td>Jun 20, 2026</td>
-                  <td><span class="status-badge completed">Completed</span></td>
+                  <td data-label="Quote ID">#QT-1070</td>
+                  <td data-label="Requirement">Prototype Batch — Aerospace Brackets</td>
+                  <td data-label="Date">Jun 20, 2026</td>
+                  <td data-label="Status"><span class="status-badge completed">Completed</span></td>
                 </tr>
               </tbody>
             </table>
@@ -341,6 +342,39 @@
     const now = new Date();
     document.getElementById('topbarDate').textContent = now.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
 
+    // Mobile menu toggle
+    const backdrop = document.createElement('div');
+    backdrop.className = 'dash-sidebar-backdrop';
+    document.body.appendChild(backdrop);
+
+    let scrollPos = 0;
+    function openSidebar() {
+      scrollPos = window.scrollY;
+      document.body.style.top = '-' + scrollPos + 'px';
+      document.getElementById('dashSidebar').classList.add('open');
+      backdrop.classList.add('visible');
+      document.body.classList.add('sidebar-open');
+    }
+    function closeSidebar() {
+      document.getElementById('dashSidebar').classList.remove('open');
+      backdrop.classList.remove('visible');
+      document.body.classList.remove('sidebar-open');
+      document.body.style.top = '';
+      window.scrollTo(0, scrollPos);
+    }
+
+    document.getElementById('menuToggle')?.addEventListener('click', () => {
+      const sidebar = document.getElementById('dashSidebar');
+      if (sidebar.classList.contains('open')) {
+        closeSidebar();
+      } else {
+        openSidebar();
+      }
+    });
+
+    document.getElementById('sidebarClose')?.addEventListener('click', closeSidebar);
+    backdrop.addEventListener('click', closeSidebar);
+
     // Sidebar nav
     document.querySelectorAll('.dash-nav-item[data-panel]').forEach(item => {
       item.addEventListener('click', (e) => {
@@ -360,13 +394,8 @@
         document.getElementById('topbarTitle').textContent = titles[panel] || 'Dashboard';
 
         // Close mobile sidebar
-        document.getElementById('dashSidebar').classList.remove('open');
+        closeSidebar();
       });
-    });
-
-    // Mobile menu toggle
-    document.getElementById('menuToggle')?.addEventListener('click', () => {
-      document.getElementById('dashSidebar').classList.toggle('open');
     });
 
     // Logout

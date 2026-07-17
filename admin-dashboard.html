@@ -16,6 +16,7 @@
       <div class="dash-sidebar-header">
         <a href="index.html"><img src="images/logo.webp" alt="Stackly"></a>
         <span class="sidebar-badge badge-admin">Admin</span>
+        <button class="dash-sidebar-close" id="sidebarClose">&times;</button>
       </div>
 
       <div class="dash-user-info">
@@ -29,30 +30,30 @@
       <nav class="dash-nav">
         <span class="dash-nav-label">Main</span>
         <a class="dash-nav-item active" data-panel="overview">
-          <span class="nav-icon">&#127968;</span> Dashboard Overview
+          <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span> Dashboard Overview
         </a>
         <a class="dash-nav-item" data-panel="orders">
-          <span class="nav-icon">&#128230;</span> All Orders
+          <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg></span> All Orders
           <span class="nav-badge">8</span>
         </a>
         <a class="dash-nav-item" data-panel="users">
-          <span class="nav-icon">&#128101;</span> Users
+          <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span> Users
           <span class="nav-badge">24</span>
         </a>
         <a class="dash-nav-item" data-panel="products">
-          <span class="nav-icon">&#9881;</span> Products
+          <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></span> Products
         </a>
         <a class="dash-nav-item" data-panel="settings">
-          <span class="nav-icon">&#9881;</span> Settings
+          <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></span> Settings
         </a>
       </nav>
 
       <div class="dash-sidebar-footer">
         <a class="dash-nav-item" href="index.html">
-          <span class="nav-icon">&#127968;</span> Back to Home
+          <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span> Back to Home
         </a>
         <a class="dash-nav-item" href="signin.html" id="logoutBtn">
-          <span class="nav-icon">&#128682;</span> Sign Out
+          <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg></span> Sign Out
         </a>
       </div>
     </aside>
@@ -90,19 +91,19 @@
         <div class="dash-panel active" id="panel-overview">
           <div class="dash-stats-row">
             <div class="dash-stat-card">
-              <div class="dash-stat-icon red">&#128230;</div>
+              <div class="dash-stat-icon red"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg></div>
               <div class="dash-stat-info"><h3>8</h3><p>Pending Orders</p></div>
             </div>
             <div class="dash-stat-card">
-              <div class="dash-stat-icon blue">&#128101;</div>
+              <div class="dash-stat-icon blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
               <div class="dash-stat-info"><h3>24</h3><p>Registered Users</p></div>
             </div>
             <div class="dash-stat-card">
-              <div class="dash-stat-icon green">&#128176;</div>
+              <div class="dash-stat-icon green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
               <div class="dash-stat-info"><h3>$142K</h3><p>Monthly Revenue</p></div>
             </div>
             <div class="dash-stat-card">
-              <div class="dash-stat-icon orange">&#9881;</div>
+              <div class="dash-stat-icon orange"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></div>
               <div class="dash-stat-info"><h3>47</h3><p>Total Products</p></div>
             </div>
           </div>
@@ -113,17 +114,17 @@
             </div>
             <div class="dash-actions-grid">
               <a class="dash-action-card" data-panel="orders">
-                <div class="action-icon">&#128230;</div>
+                <div class="action-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg></div>
                 <h4>Manage Orders</h4>
                 <p>View & update order status</p>
               </a>
               <a class="dash-action-card" data-panel="users">
-                <div class="action-icon">&#128101;</div>
+                <div class="action-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
                 <h4>Manage Users</h4>
                 <p>View registered accounts</p>
               </a>
               <a class="dash-action-card" data-panel="products">
-                <div class="action-icon">&#9881;</div>
+                <div class="action-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></div>
                 <h4>Manage Products</h4>
                 <p>Add or edit product listings</p>
               </a>
@@ -183,68 +184,68 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>#STK-2851</td>
-                  <td>john@doe.com</td>
-                  <td>MF-500 CNC Lathe</td>
-                  <td>Jul 14, 2026</td>
-                  <td>$48,500</td>
-                  <td><span class="status-badge processing">Processing</span></td>
+                  <td data-label="Order ID">#STK-2851</td>
+                  <td data-label="Customer">john@doe.com</td>
+                  <td data-label="Product">MF-500 CNC Lathe</td>
+                  <td data-label="Date">Jul 14, 2026</td>
+                  <td data-label="Amount">$48,500</td>
+                  <td data-label="Status"><span class="status-badge processing">Processing</span></td>
                 </tr>
                 <tr>
-                  <td>#STK-2850</td>
-                  <td>sarah@steelworks.com</td>
-                  <td>MF-H2000 Press</td>
-                  <td>Jul 13, 2026</td>
-                  <td>$125,000</td>
-                  <td><span class="status-badge pending">Pending</span></td>
+                  <td data-label="Order ID">#STK-2850</td>
+                  <td data-label="Customer">sarah@steelworks.com</td>
+                  <td data-label="Product">MF-H2000 Press</td>
+                  <td data-label="Date">Jul 13, 2026</td>
+                  <td data-label="Amount">$125,000</td>
+                  <td data-label="Status"><span class="status-badge pending">Pending</span></td>
                 </tr>
                 <tr>
-                  <td>#STK-2849</td>
-                  <td>hans@eurosteel.de</td>
-                  <td>MF-RW600 Robot Welder</td>
-                  <td>Jul 12, 2026</td>
-                  <td>$67,800</td>
-                  <td><span class="status-badge processing">Processing</span></td>
+                  <td data-label="Order ID">#STK-2849</td>
+                  <td data-label="Customer">hans@eurosteel.de</td>
+                  <td data-label="Product">MF-RW600 Robot Welder</td>
+                  <td data-label="Date">Jul 12, 2026</td>
+                  <td data-label="Amount">$67,800</td>
+                  <td data-label="Status"><span class="status-badge processing">Processing</span></td>
                 </tr>
                 <tr>
-                  <td>#STK-2847</td>
-                  <td>thomas@nordic.aero</td>
-                  <td>CNC Tool Holders (Set)</td>
-                  <td>Jul 10, 2026</td>
-                  <td>$2,340</td>
-                  <td><span class="status-badge completed">Shipped</span></td>
+                  <td data-label="Order ID">#STK-2847</td>
+                  <td data-label="Customer">thomas@nordic.aero</td>
+                  <td data-label="Product">CNC Tool Holders (Set)</td>
+                  <td data-label="Date">Jul 10, 2026</td>
+                  <td data-label="Amount">$2,340</td>
+                  <td data-label="Status"><span class="status-badge completed">Shipped</span></td>
                 </tr>
                 <tr>
-                  <td>#STK-2845</td>
-                  <td>james@techcorp.io</td>
-                  <td>MF-LC5000 Fiber Laser</td>
-                  <td>Jul 08, 2026</td>
-                  <td>$89,000</td>
-                  <td><span class="status-badge completed">Delivered</span></td>
+                  <td data-label="Order ID">#STK-2845</td>
+                  <td data-label="Customer">james@techcorp.io</td>
+                  <td data-label="Product">MF-LC5000 Fiber Laser</td>
+                  <td data-label="Date">Jul 08, 2026</td>
+                  <td data-label="Amount">$89,000</td>
+                  <td data-label="Status"><span class="status-badge completed">Delivered</span></td>
                 </tr>
                 <tr>
-                  <td>#STK-2840</td>
-                  <td>maria@innovatex.com</td>
-                  <td>Prototype Batch — Brackets</td>
-                  <td>Jul 01, 2026</td>
-                  <td>$5,600</td>
-                  <td><span class="status-badge completed">Delivered</span></td>
+                  <td data-label="Order ID">#STK-2840</td>
+                  <td data-label="Customer">maria@innovatex.com</td>
+                  <td data-label="Product">Prototype Batch — Brackets</td>
+                  <td data-label="Date">Jul 01, 2026</td>
+                  <td data-label="Amount">$5,600</td>
+                  <td data-label="Status"><span class="status-badge completed">Delivered</span></td>
                 </tr>
                 <tr>
-                  <td>#STK-2835</td>
-                  <td>rajesh@autoparts.in</td>
-                  <td>MF-800 VMC</td>
-                  <td>Jun 25, 2026</td>
-                  <td>$72,400</td>
-                  <td><span class="status-badge completed">Delivered</span></td>
+                  <td data-label="Order ID">#STK-2835</td>
+                  <td data-label="Customer">rajesh@autoparts.in</td>
+                  <td data-label="Product">MF-800 VMC</td>
+                  <td data-label="Date">Jun 25, 2026</td>
+                  <td data-label="Amount">$72,400</td>
+                  <td data-label="Status"><span class="status-badge completed">Delivered</span></td>
                 </tr>
                 <tr>
-                  <td>#STK-2830</td>
-                  <td>david@fabworks.ca</td>
-                  <td>MF-PC3000 Plasma Cutter</td>
-                  <td>Jun 18, 2026</td>
-                  <td>$35,200</td>
-                  <td><span class="status-badge cancelled">Cancelled</span></td>
+                  <td data-label="Order ID">#STK-2830</td>
+                  <td data-label="Customer">david@fabworks.ca</td>
+                  <td data-label="Product">MF-PC3000 Plasma Cutter</td>
+                  <td data-label="Date">Jun 18, 2026</td>
+                  <td data-label="Amount">$35,200</td>
+                  <td data-label="Status"><span class="status-badge cancelled">Cancelled</span></td>
                 </tr>
               </tbody>
             </table>
@@ -269,53 +270,53 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>John Doe</td>
-                  <td>john@doe.com</td>
-                  <td>Doe Manufacturing</td>
-                  <td>User</td>
-                  <td><span class="status-badge active">Active</span></td>
+                  <td data-label="User">John Doe</td>
+                  <td data-label="Email">john@doe.com</td>
+                  <td data-label="Company">Doe Manufacturing</td>
+                  <td data-label="Role">User</td>
+                  <td data-label="Status"><span class="status-badge active">Active</span></td>
                 </tr>
                 <tr>
-                  <td>Sarah Mitchell</td>
-                  <td>sarah@steelworks.com</td>
-                  <td>SteelWorks International</td>
-                  <td>User</td>
-                  <td><span class="status-badge active">Active</span></td>
+                  <td data-label="User">Sarah Mitchell</td>
+                  <td data-label="Email">sarah@steelworks.com</td>
+                  <td data-label="Company">SteelWorks International</td>
+                  <td data-label="Role">User</td>
+                  <td data-label="Status"><span class="status-badge active">Active</span></td>
                 </tr>
                 <tr>
-                  <td>Hans Mueller</td>
-                  <td>hans@eurosteel.de</td>
-                  <td>EuroSteel GmbH</td>
-                  <td>User</td>
-                  <td><span class="status-badge active">Active</span></td>
+                  <td data-label="User">Hans Mueller</td>
+                  <td data-label="Email">hans@eurosteel.de</td>
+                  <td data-label="Company">EuroSteel GmbH</td>
+                  <td data-label="Role">User</td>
+                  <td data-label="Status"><span class="status-badge active">Active</span></td>
                 </tr>
                 <tr>
-                  <td>Thomas Jensen</td>
-                  <td>thomas@nordic.aero</td>
-                  <td>Nordic Aerospace</td>
-                  <td>User</td>
-                  <td><span class="status-badge active">Active</span></td>
+                  <td data-label="User">Thomas Jensen</td>
+                  <td data-label="Email">thomas@nordic.aero</td>
+                  <td data-label="Company">Nordic Aerospace</td>
+                  <td data-label="Role">User</td>
+                  <td data-label="Status"><span class="status-badge active">Active</span></td>
                 </tr>
                 <tr>
-                  <td>James Park</td>
-                  <td>james@techcorp.io</td>
-                  <td>TechCorp</td>
-                  <td>User</td>
-                  <td><span class="status-badge active">Active</span></td>
+                  <td data-label="User">James Park</td>
+                  <td data-label="Email">james@techcorp.io</td>
+                  <td data-label="Company">TechCorp</td>
+                  <td data-label="Role">User</td>
+                  <td data-label="Status"><span class="status-badge active">Active</span></td>
                 </tr>
                 <tr>
-                  <td>Maria Santos</td>
-                  <td>maria@innovatex.com</td>
-                  <td>InnovateX</td>
-                  <td>User</td>
-                  <td><span class="status-badge pending">Pending</span></td>
+                  <td data-label="User">Maria Santos</td>
+                  <td data-label="Email">maria@innovatex.com</td>
+                  <td data-label="Company">InnovateX</td>
+                  <td data-label="Role">User</td>
+                  <td data-label="Status"><span class="status-badge pending">Pending</span></td>
                 </tr>
                 <tr>
-                  <td>Rajesh Kumar</td>
-                  <td>rajesh@autoparts.in</td>
-                  <td>AutoParts Global</td>
-                  <td>User</td>
-                  <td><span class="status-badge active">Active</span></td>
+                  <td data-label="User">Rajesh Kumar</td>
+                  <td data-label="Email">rajesh@autoparts.in</td>
+                  <td data-label="Company">AutoParts Global</td>
+                  <td data-label="Role">User</td>
+                  <td data-label="Status"><span class="status-badge active">Active</span></td>
                 </tr>
               </tbody>
             </table>
@@ -341,52 +342,52 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>MF-CL-500</td>
-                  <td>MF-500 CNC Lathe</td>
-                  <td>CNC Machines</td>
-                  <td>$48,500</td>
-                  <td>7</td>
-                  <td><span class="status-badge active">In Stock</span></td>
+                  <td data-label="SKU">MF-CL-500</td>
+                  <td data-label="Product">MF-500 CNC Lathe</td>
+                  <td data-label="Category">CNC Machines</td>
+                  <td data-label="Price">$48,500</td>
+                  <td data-label="Stock">7</td>
+                  <td data-label="Status"><span class="status-badge active">In Stock</span></td>
                 </tr>
                 <tr>
-                  <td>MF-VM-800</td>
-                  <td>MF-800 VMC</td>
-                  <td>CNC Machines</td>
-                  <td>$72,400</td>
-                  <td>4</td>
-                  <td><span class="status-badge active">In Stock</span></td>
+                  <td data-label="SKU">MF-VM-800</td>
+                  <td data-label="Product">MF-800 VMC</td>
+                  <td data-label="Category">CNC Machines</td>
+                  <td data-label="Price">$72,400</td>
+                  <td data-label="Stock">4</td>
+                  <td data-label="Status"><span class="status-badge active">In Stock</span></td>
                 </tr>
                 <tr>
-                  <td>MF-HP-2000</td>
-                  <td>MF-H2000 Press</td>
-                  <td>Hydraulic</td>
-                  <td>$125,000</td>
-                  <td>2</td>
-                  <td><span class="status-badge pending">Low Stock</span></td>
+                  <td data-label="SKU">MF-HP-2000</td>
+                  <td data-label="Product">MF-H2000 Press</td>
+                  <td data-label="Category">Hydraulic</td>
+                  <td data-label="Price">$125,000</td>
+                  <td data-label="Stock">2</td>
+                  <td data-label="Status"><span class="status-badge pending">Low Stock</span></td>
                 </tr>
                 <tr>
-                  <td>MF-RW-600</td>
-                  <td>MF-RW600 Robot Welder</td>
-                  <td>Welding</td>
-                  <td>$67,800</td>
-                  <td>5</td>
-                  <td><span class="status-badge active">In Stock</span></td>
+                  <td data-label="SKU">MF-RW-600</td>
+                  <td data-label="Product">MF-RW600 Robot Welder</td>
+                  <td data-label="Category">Welding</td>
+                  <td data-label="Price">$67,800</td>
+                  <td data-label="Stock">5</td>
+                  <td data-label="Status"><span class="status-badge active">In Stock</span></td>
                 </tr>
                 <tr>
-                  <td>MF-LC-5000</td>
-                  <td>MF-LC5000 Fiber Laser</td>
-                  <td>Laser Cutting</td>
-                  <td>$89,000</td>
-                  <td>3</td>
-                  <td><span class="status-badge active">In Stock</span></td>
+                  <td data-label="SKU">MF-LC-5000</td>
+                  <td data-label="Product">MF-LC5000 Fiber Laser</td>
+                  <td data-label="Category">Laser Cutting</td>
+                  <td data-label="Price">$89,000</td>
+                  <td data-label="Stock">3</td>
+                  <td data-label="Status"><span class="status-badge active">In Stock</span></td>
                 </tr>
                 <tr>
-                  <td>MF-PC-3000</td>
-                  <td>MF-PC3000 Plasma Cutter</td>
-                  <td>Cutting</td>
-                  <td>$35,200</td>
-                  <td>0</td>
-                  <td><span class="status-badge cancelled">Out of Stock</span></td>
+                  <td data-label="SKU">MF-PC-3000</td>
+                  <td data-label="Product">MF-PC3000 Plasma Cutter</td>
+                  <td data-label="Category">Cutting</td>
+                  <td data-label="Price">$35,200</td>
+                  <td data-label="Stock">0</td>
+                  <td data-label="Status"><span class="status-badge cancelled">Out of Stock</span></td>
                 </tr>
               </tbody>
             </table>
@@ -455,6 +456,39 @@
     const now = new Date();
     document.getElementById('topbarDate').textContent = now.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
 
+    // Mobile menu toggle
+    const backdrop = document.createElement('div');
+    backdrop.className = 'dash-sidebar-backdrop';
+    document.body.appendChild(backdrop);
+
+    let scrollPos = 0;
+    function openSidebar() {
+      scrollPos = window.scrollY;
+      document.body.style.top = '-' + scrollPos + 'px';
+      document.getElementById('dashSidebar').classList.add('open');
+      backdrop.classList.add('visible');
+      document.body.classList.add('sidebar-open');
+    }
+    function closeSidebar() {
+      document.getElementById('dashSidebar').classList.remove('open');
+      backdrop.classList.remove('visible');
+      document.body.classList.remove('sidebar-open');
+      document.body.style.top = '';
+      window.scrollTo(0, scrollPos);
+    }
+
+    document.getElementById('menuToggle')?.addEventListener('click', () => {
+      const sidebar = document.getElementById('dashSidebar');
+      if (sidebar.classList.contains('open')) {
+        closeSidebar();
+      } else {
+        openSidebar();
+      }
+    });
+
+    document.getElementById('sidebarClose')?.addEventListener('click', closeSidebar);
+    backdrop.addEventListener('click', closeSidebar);
+
     // Sidebar nav
     document.querySelectorAll('.dash-nav-item[data-panel]').forEach(item => {
       item.addEventListener('click', (e) => {
@@ -470,13 +504,9 @@
         const titles = { overview: 'Admin Dashboard', orders: 'All Orders', users: 'Users', products: 'Products', settings: 'Settings' };
         document.getElementById('topbarTitle').textContent = titles[panel] || 'Admin Dashboard';
 
-        document.getElementById('dashSidebar').classList.remove('open');
+        // Close mobile sidebar
+        closeSidebar();
       });
-    });
-
-    // Mobile menu toggle
-    document.getElementById('menuToggle')?.addEventListener('click', () => {
-      document.getElementById('dashSidebar').classList.toggle('open');
     });
 
     // Logout
