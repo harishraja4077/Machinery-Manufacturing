@@ -193,6 +193,7 @@ body.menu-open {
   gap: 12px;
   text-decoration: none;
   z-index: 1001;
+  margin-left: -70px;
 }
 
 .logo-icon {
@@ -2511,6 +2512,7 @@ body.menu-open {
     border-color: transparent !important;
   }
   .nav-cta::before { display: none !important; }
+  .logo { margin-left: 0; }
   .logo-img { height: 70px; }
   .navbar.scrolled .logo-img { height: 60px; }
   .nav-container { padding: 0 16px; }
@@ -2625,6 +2627,7 @@ body.menu-open {
   .footer-col h4 { font-size: 14px; margin-bottom: 16px; }
   .footer-col ul a { font-size: 14px; }
 
+  .logo { margin-left: 0; }
   .logo-img { height: 60px; }
 }
 
