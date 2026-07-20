@@ -64,7 +64,9 @@
       <!-- TOPBAR -->
       <header class="dash-topbar">
         <div class="dash-topbar-left">
-          <button class="dash-menu-toggle" id="menuToggle">&#9776;</button>
+          <button class="dash-menu-toggle" id="menuToggle">
+            <span></span><span></span><span></span>
+          </button>
           <div>
             <h2 id="topbarTitle"> User Dashboard</h2>
             <span class="topbar-date" id="topbarDate"></span>
@@ -361,6 +363,7 @@
       document.body.classList.remove('sidebar-open');
       document.body.style.top = '';
       window.scrollTo(0, scrollPos);
+      document.getElementById('menuToggle')?.classList.remove('active');
     }
 
     document.getElementById('menuToggle')?.addEventListener('click', () => {
@@ -370,6 +373,7 @@
       } else {
         openSidebar();
       }
+      document.getElementById('menuToggle')?.classList.toggle('active');
     });
 
     document.getElementById('sidebarClose')?.addEventListener('click', closeSidebar);
