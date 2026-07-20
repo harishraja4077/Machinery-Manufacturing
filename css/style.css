@@ -2516,7 +2516,7 @@ body.menu-open {
   .nav-container { padding: 0 16px; }
 
   /* Hero */
-  .hero { min-height: auto; padding: 120px 0 60px; }
+  .hero { min-height: auto; padding: 200px 0 60px; }
   .hero-content { gap: 30px; padding: 0 16px; }
   .hero-title { font-size: clamp(28px, 7vw, 40px); margin-bottom: 16px; }
   .hero-desc { font-size: 16px; margin-bottom: 24px; }
@@ -2602,7 +2602,7 @@ body.menu-open {
    RESPONSIVE - SMALL MOBILE (max-width: 480px)
    ============================================ */
 @media (max-width: 480px) {
-  .hero { padding: 100px 0 40px; }
+  .hero { padding: 160px 0 40px; }
   .hero-title { font-size: clamp(24px, 8vw, 32px); }
   .hero-desc { font-size: 14px; }
   .hero-badge { font-size: 10px; padding: 6px 14px; }
